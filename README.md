@@ -1,1 +1,4 @@
-# gichvmz
+# gichvmz env
+SUBSCRIPTION_BASE=remark
+PORT
+DOMAIN
