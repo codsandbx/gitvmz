@@ -274,7 +274,7 @@ function generateVmsnewthisLink(callback) {
             net: "ws",
             type: "none",
             host: DOMAIN,
-            path: VMSNEWTHIS_PATH,
+            path: `${VMSNEWTHIS_PATH}?ed=2560`, // 在 path 中添加 ?ed=2560
             tls: "tls",
             sni: DOMAIN
         };
