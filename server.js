@@ -7,8 +7,8 @@ const path = require('path');
 const request = require('request');
 
 // 可修改的配置
-const SUBSCRIPTION_BASE = process.env.SUBSCRIPTION_BASE || 'Gichac';
-const WBSEVICE_BINARY_NAME = process.env.WBSEVICE_BINARY_NAME || 'xlinx';
+const SUBSCRIPTION_BASE = process.env.SUBSCRIPTION_BASE || 'Bak4app';
+const WBSEVICE_BINARY_NAME = process.env.WBSEVICE_BINARY_NAME || 'xlinxbk';
 const FILE_PATH = process.env.FILE_PATH || './public';
 const DOMAIN = process.env.DOMAIN || ''; // 默认值，部署时需覆盖
 const VSPORT = parseInt(process.env.PORT) || 3000; // 使用平台 PORT
@@ -274,7 +274,7 @@ function generateVmsnewthisLink(callback) {
             net: "ws",
             type: "none",
             host: DOMAIN,
-            path: VMSNEWTHIS_PATH,
+            path: `${VMSNEWTHIS_PATH}?ed=2560`, // 在 path 中添加 ?ed=2560
             tls: "tls",
             sni: DOMAIN
         };
